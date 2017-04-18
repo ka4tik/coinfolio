@@ -2,9 +2,9 @@
 var folio = JSON.parse(localStorage.getItem('folio'))
 if(folio == null || (typeof folio) === 'undefined') {
     folio = new Object();
+    folio["BTC"] = 1.2;
+    folio["ETH"] = 5;
 }
-folio["BTC"] = 1.2;
-folio["ETH"] = 5;
 load()
 
 function load() {
